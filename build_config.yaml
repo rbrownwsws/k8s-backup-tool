@@ -1,0 +1,35 @@
+# The rclone version to use
+rclone_version: "v1.62.2"
+
+# The kubectl version to use (the key is kubernetes version)
+kubectl_version:
+  "1.27": "v1.27.1"
+  "1.26": "v1.27.1"
+
+rclone_download:
+  - version: "v1.62.2"
+    os: "linux"
+    arch: "amd64"
+    sha256: "6c8676dc56e3d2e26358b5bae616ab3ec95e26181cd9b8692e101dcc0fc966a1"
+  - version: "v1.62.2"
+    os: "linux"
+    arch: "arm"
+    sha256: "a6adb2db09d7d3a546e55248375ec27eb235caff4707c3e5c5c669f5365edbb1"
+  - version: "v1.62.2"
+    os: "linux"
+    arch: "arm64"
+    sha256: "e921f0ac3edb45ea8f1c6b8110ed0be263aaedfb6a5ee98968d5836d3f1aadfc"
+
+kubectl_download:
+  - version: "v1.27.1"
+    os: "linux"
+    arch: "amd64"
+    sha256: "7fe3a762d926fb068bae32c399880e946e8caf3d903078bea9b169dcd5c17f6d"
+  - version: "v1.27.1"
+    os: "linux"
+    arch: "arm64"
+    sha256: "fd3cb8f16e6ed8aee9955b76e3027ac423b6d1cc7356867310d128082e2db916"
+  - version: "v1.27.1"
+    os: "linux"
+    arch: "arm"
+    sha256: "fe704e355bf2c5f69964cd12772687535a11a5e9ec0baf4f27e0a8fb156bc615"
