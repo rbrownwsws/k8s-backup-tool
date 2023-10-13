@@ -1,5 +1,5 @@
-
-# No IDE files
+# IDE files
 .idea
 
-build
+# Virtual environments
+venv
