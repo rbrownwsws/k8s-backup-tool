@@ -1,24 +1,26 @@
 import os
 import yaml
 
+from constants import *
+
 target_os = os.environ["TARGETOS"]
 target_arch = os.environ["TARGETARCH"]
 target_k8s = os.environ["TARGETK8S"]
 
-build_config = yaml.load(open("build_config.yaml", "r"), Loader=yaml.Loader)
+build_config = yaml.load(open(CONFIG_FILE, "r"), Loader=yaml.Loader)
 
 # Find the version of kubectl we want to use for the given kubernetes version
-if target_k8s not in build_config["kubectl_version"]:
+if target_k8s not in build_config[KEY_KUBECTL_VERSION]:
     print("Unknown kubernetes version: " + target_k8s)
     exit(1)
-kubectl_version = build_config["kubectl_version"][target_k8s]
+kubectl_version = build_config[KEY_KUBECTL_VERSION][target_k8s]
 
 # Find the sha256 hash of the kubectl binary
 kubectl_sha256 = ""
 try:
     kubectl_sha256 = next(
         download["sha256"]
-        for download in build_config["kubectl_download"]
+        for download in build_config[KEY_KUBECTL_DOWNLOAD]
         if download["version"] == kubectl_version
         and download["os"] == target_os
         and download["arch"] == target_arch
@@ -29,16 +31,14 @@ except StopIteration:
     )
     exit(1)
 
-rclone_version = build_config["rclone_version"]
+rclone_version = build_config[KEY_RCLONE_VERSION]
 # Find the sha256 hash of the rclone binary
 rclone_sha256 = ""
 try:
     rclone_sha256 = next(
         download["sha256"]
-        for download in build_config["rclone_download"]
-        if download["version"] == rclone_version
-        and download["os"] == target_os
-        and download["arch"] == target_arch
+        for download in build_config[KEY_RCLONE_DOWNLOAD]
+        if download["os"] == target_os and download["arch"] == target_arch
     )
 except StopIteration:
     print(

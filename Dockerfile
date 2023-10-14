@@ -20,6 +20,7 @@ ENV TARGETARCH=${TARGETARCH:-amd64}
 ENV TARGETK8S=${TARGETK8S:-1.27}
 
 # Generate build vars
+COPY constants.py .
 COPY generate_build_env.py .
 COPY requirements.txt .
 COPY build_config.yaml .
