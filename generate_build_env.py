@@ -54,6 +54,4 @@ env_file.write(f"KUBECTL_SHA256={kubectl_sha256}\n")
 env_file.write(f"RCLONE_VERSION={rclone_version}\n")
 env_file.write(f"RCLONE_SHA256={rclone_sha256}\n")
 
-env_file.write(f"RCLONE_ARCHIVE=rclone-{rclone_version}-{target_os}-{target_arch}\n")
-
 env_file.close()

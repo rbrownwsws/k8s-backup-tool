@@ -28,6 +28,7 @@ RUN pip install -r requirements.txt \
 
 # Get rclone
 RUN source .env \
+    && export RCLONE_ARCHIVE=rclone-${RCLONE_VERSION}-${TARGETOS}-${TARGETARCH} \
     && curl -O https://downloads.rclone.org/${RCLONE_VERSION}/${RCLONE_ARCHIVE}.zip \
     && echo "${RCLONE_SHA256}  ${RCLONE_ARCHIVE}.zip" | sha256sum -c - \
     && unzip ${RCLONE_ARCHIVE}.zip \
