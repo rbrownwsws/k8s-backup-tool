@@ -1,4 +1,4 @@
-FROM python:3-alpine3.17 AS prep
+FROM python:3-alpine3.18 AS prep
 
 # Make sure we have the tools get kubectl and rclone
 RUN apk --no-cache add \
@@ -44,7 +44,7 @@ RUN source .env \
     && echo "${KUBECTL_SHA256}  kubectl" | sha256sum -c \
     && chmod +x ./kubectl
 
-FROM alpine:3.17.3
+FROM alpine:3.18.4
 RUN apk --no-cache add ca-certificates
 COPY --from=prep /tools/rclone /usr/local/bin/rclone
 COPY --from=prep /tools/kubectl /usr/local/bin/kubectl
