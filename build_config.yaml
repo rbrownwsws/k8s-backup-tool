@@ -1,35 +1,53 @@
-# The rclone version to use
-rclone_version: "v1.62.2"
-
-# The kubectl version to use (the key is kubernetes version)
-kubectl_version:
-  "1.27": "v1.27.1"
-  "1.26": "v1.27.1"
-
-rclone_download:
-  - version: "v1.62.2"
-    os: "linux"
-    arch: "amd64"
-    sha256: "6c8676dc56e3d2e26358b5bae616ab3ec95e26181cd9b8692e101dcc0fc966a1"
-  - version: "v1.62.2"
-    os: "linux"
-    arch: "arm"
-    sha256: "a6adb2db09d7d3a546e55248375ec27eb235caff4707c3e5c5c669f5365edbb1"
-  - version: "v1.62.2"
-    os: "linux"
-    arch: "arm64"
-    sha256: "e921f0ac3edb45ea8f1c6b8110ed0be263aaedfb6a5ee98968d5836d3f1aadfc"
-
 kubectl_download:
-  - version: "v1.27.1"
-    os: "linux"
-    arch: "amd64"
-    sha256: "7fe3a762d926fb068bae32c399880e946e8caf3d903078bea9b169dcd5c17f6d"
-  - version: "v1.27.1"
-    os: "linux"
-    arch: "arm64"
-    sha256: "fd3cb8f16e6ed8aee9955b76e3027ac423b6d1cc7356867310d128082e2db916"
-  - version: "v1.27.1"
-    os: "linux"
-    arch: "arm"
-    sha256: "fe704e355bf2c5f69964cd12772687535a11a5e9ec0baf4f27e0a8fb156bc615"
+- arch: amd64
+  os: linux
+  sha256: 98ea4a13895e54ba24f57e0d369ff6be0d3906895305d5390197069b1da12ae2
+  version: v1.26.9
+- arch: arm
+  os: linux
+  sha256: 8e020ffe72dd4c8694ee5e9f124833ca302a2341fa046650482b38ddb189d1fd
+  version: v1.26.9
+- arch: arm64
+  os: linux
+  sha256: f945c63220b393ddf8df67d87e67ff74b7f56219a670dee38bc597a078588e90
+  version: v1.26.9
+- arch: amd64
+  os: linux
+  sha256: 2b7adb71c8630904da1b94e262c8c3c477e9609b3c0ed8ae1213a1e156ae38dd
+  version: v1.27.6
+- arch: arm
+  os: linux
+  sha256: 3a34a38908a9d0f85dc531cc1c49061ceeaa2ab742382d891d9fc7bf8dc53b8c
+  version: v1.27.6
+- arch: arm64
+  os: linux
+  sha256: 7322a6f600de6d0d06cf333bdc24cd2a340bba12920b0c2385c97884c808c810
+  version: v1.27.6
+- arch: amd64
+  os: linux
+  sha256: c922440b043e5de1afa3c1382f8c663a25f055978cbc6e8423493ec157579ec5
+  version: v1.28.2
+- arch: arm
+  os: linux
+  sha256: 6576aa70413ff00c593a07b549b8b9d9e5ef73c42bb39ab4af475e0fdb540613
+  version: v1.28.2
+- arch: arm64
+  os: linux
+  sha256: ea6d89b677a8d9df331a82139bb90d9968131530b94eab26cee561531eff4c53
+  version: v1.28.2
+kubectl_version:
+  '1.25': v1.26.9
+  '1.26': v1.27.6
+  '1.27': v1.28.2
+  '1.28': v1.28.2
+rclone_download:
+- arch: amd64
+  os: linux
+  sha256: 7ebdb680e615f690bd52c661487379f9df8de648ecf38743e49fe12c6ace6dc7
+- arch: arm
+  os: linux
+  sha256: 687a576ce0781327c1b94663364685e9d59f28359e3d6a60b2ed59cfccdf9c3e
+- arch: arm64
+  os: linux
+  sha256: b5a6cb3aef4fd1a2165fb8c21b1b1705f3cb754a202adc81931b47cd39c64749
+rclone_version: v1.64.0

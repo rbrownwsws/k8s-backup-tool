@@ -22,7 +22,11 @@ jobs:
       packages: write
     strategy:
       matrix:
-        k8s: ["1.26", "1.27"]
+        k8s:
+          - "1.25"
+          - "1.26"
+          - "1.27"
+          - "1.28"
 
     steps:
       - name: Checkout repository
