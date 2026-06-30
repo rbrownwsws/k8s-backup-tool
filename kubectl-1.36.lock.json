@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "config": {
-    "name": "k8s-1.36.yaml",
+    "name": "kubectl-1.36.yaml",
     "checksum": "sha256-hlM3SDYEle5jBp4dalimB1BZOGPZ3OzRC6E+veAGP2g="
   },
   "contents": {
