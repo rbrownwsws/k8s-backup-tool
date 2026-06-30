@@ -1,0 +1,26 @@
+contents:
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+  repositories:
+    - https://packages.wolfi.dev/os
+  packages:
+    - wolfi-base
+    - ca-certificates-bundle
+    - kubectl-1.36
+    - rclone
+
+entrypoint:
+  command: /bin/sh -l
+
+accounts:
+  groups:
+    - groupname: backup
+      gid: 1000
+  users:
+    - username: backup
+      uid: 1000
+      shell: /bin/sh
+  run-as: backup
+
+archs:
+- amd64
