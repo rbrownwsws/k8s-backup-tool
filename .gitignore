@@ -1,0 +1,5 @@
+# SBOMs
+*.spdx.json
+
+# Local builds
+*.tar
