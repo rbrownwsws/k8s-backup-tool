@@ -22,5 +22,13 @@ accounts:
       shell: /bin/sh
   run-as: backup
 
+paths:
+  - path: /usr/bin/kubectl
+    type: symlink
+    uid: 0
+    gid: 0
+    permissions: 0o755
+    source: /usr/bin/kubectl-1.36
+
 archs:
 - amd64
