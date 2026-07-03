@@ -1,0 +1,29 @@
+name: Update lock files
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Run `apko lock`
+        uses: docker://cgr.dev/chainguard/apko@sha256:994ffaf86e3141b55cfd9cdbd14e7f8f94f9eb2f45266e6adc0a6a409b270aa1 # latest
+        with:
+          args: lock kubectl-1.36.yaml
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: update lock file"
+          git push
