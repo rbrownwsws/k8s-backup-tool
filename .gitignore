@@ -3,3 +3,4 @@
 
 # Local builds
 *.tar
+/dist/
