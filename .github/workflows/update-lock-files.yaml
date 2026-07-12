@@ -2,6 +2,8 @@ name: Update lock files
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
