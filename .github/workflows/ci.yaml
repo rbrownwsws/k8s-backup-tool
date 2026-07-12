@@ -63,7 +63,7 @@ jobs:
         run: crane auth login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
 
       - name: push images
-        run: crane push dist/oci-images ghcr.io/${{ github.repository }}:kubectl-1.36 --image-refs digest.txt
+        run: crane push --index dist/oci-images ghcr.io/${{ github.repository }}:kubectl-1.36 --image-refs digest.txt
 
       # TODO: Attach SBOMs
       # TODO: Sign images
