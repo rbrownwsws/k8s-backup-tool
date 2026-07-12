@@ -31,4 +31,4 @@ paths:
     source: /usr/bin/kubectl-1.36
 
 archs:
-- amd64
+  - amd64
