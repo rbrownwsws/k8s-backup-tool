@@ -11,6 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-24.04
 
+    env:
+      REPO: https://github.com/${{ github.event.pull_request.head.repo.full_name || github.repository }}
+      REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -24,7 +28,14 @@ jobs:
       - name: Run `apko build`
         uses: docker://cgr.dev/chainguard/apko@sha256:994ffaf86e3141b55cfd9cdbd14e7f8f94f9eb2f45266e6adc0a6a409b270aa1 # latest
         with:
-          args: build --lockfile kubectl-1.36.lock.json kubectl-1.36.yaml k8s-backup-tool:kubectl-1.36 ./dist/oci-images
+          args: >-
+            build
+            --annotations=org.opencontainers.image.source:${{ env.REPO }}
+            --annotations=org.opencontainers.image.revision:${{ env.REVISION }}
+            --lockfile=kubectl-1.36.lock.json
+            kubectl-1.36.yaml
+            k8s-backup-tool:kubectl-1.36
+            ./dist/oci-images
 
       - name: Fix ownership of apko output
         run: sudo chown -R "$(id -u):$(id -g)" ./dist/

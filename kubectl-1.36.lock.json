@@ -2,7 +2,7 @@
   "version": "v1",
   "config": {
     "name": "kubectl-1.36.yaml",
-    "checksum": "sha256-XWllXoX/XR03HwdSwAo0FbtYS3HKJplIXa1prD8q4k0="
+    "checksum": "sha256-ghUI/QMb6sL1fM37E4SBBnRDXozZImUp3Z1gxuG8U/I="
   },
   "contents": {
     "keyring": [

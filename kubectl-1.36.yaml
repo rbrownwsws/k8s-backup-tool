@@ -9,6 +9,11 @@ contents:
     - kubectl-1.36
     - rclone
 
+annotations:
+  org.opencontainers.image.title: "k8s-backup-tool"
+  org.opencontainers.image.description: "A container with kubectl and rclone."
+  org.opencontainers.image.licenses: "MIT"
+
 entrypoint:
   command: /bin/sh -l
 
