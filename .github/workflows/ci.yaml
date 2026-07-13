@@ -30,6 +30,7 @@ jobs:
         with:
           args: >-
             build
+            --vcs=false
             --annotations=org.opencontainers.image.source:${{ env.REPO }}
             --annotations=org.opencontainers.image.revision:${{ env.REVISION }}
             --lockfile=kubectl-1.36.lock.json
