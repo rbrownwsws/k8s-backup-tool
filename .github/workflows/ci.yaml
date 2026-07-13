@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
-      - name: Create bulid output dir
+      - name: Create build output dir
         run: |
           mkdir ./dist
           mkdir ./dist/oci-images
@@ -82,5 +82,5 @@ jobs:
       - name: Authenticate with ghcr.io container registry
         run: crane auth login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
 
-      - name: push images
+      - name: Push images
         run: crane push --index dist/oci-images ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:kubectl-1.36 --image-refs digest.txt
