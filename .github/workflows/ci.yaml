@@ -46,6 +46,19 @@ jobs:
       - name: Fix ownership of apko output
         run: sudo chown -R "$(id -u):$(id -g)" ./dist/
 
+      - name: Fix arch names of apko SBOMs
+        run: |
+          declare -A arch_map=( [x86_64]=amd64 [aarch64]=arm64 [armv7]=arm )
+
+          for apk_arch in "${!arch_map[@]}"; do
+            oci_arch="${arch_map[$apk_arch]}"
+            src="dist/sboms/sbom-${apk_arch}.spdx.json"
+            dst="dist/sboms/sbom-${oci_arch}.spdx.json"
+            if [ -f "$src" ]; then
+              mv "$src" "$dst"
+            fi
+          done
+
       - name: Upload OCI Images
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.2
         with:
