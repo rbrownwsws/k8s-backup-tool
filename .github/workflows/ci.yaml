@@ -105,8 +105,12 @@ jobs:
           name: oci-images
           path: dist/oci-images
 
-      - name: Authenticate with ghcr.io container registry
-        run: crane auth login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@af1e73f918a031802d376d3c8bbc3fe56130a9b0 # v4.4.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push images
         run: crane push --index dist/oci-images ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:kubectl-1.36 --image-refs digest.txt
@@ -127,17 +131,18 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - name: Setup `crane`
-        uses: imjasonh/setup-crane@feee3b6bb0d4c68370f256a4502498c9227e5c6b # v0.7
-
       - name: Download SBOMs
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: sboms
           path: dist/sboms
 
-      - name: Authenticate with ghcr.io container registry
-        run: crane auth login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@af1e73f918a031802d376d3c8bbc3fe56130a9b0 # v4.4.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish index SBOM
         uses: actions/attest@a1948c3f048ba23858d222213b7c278aabede763 # v4.1.1
@@ -168,17 +173,18 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - name: Setup `crane`
-        uses: imjasonh/setup-crane@feee3b6bb0d4c68370f256a4502498c9227e5c6b # v0.7
-
       - name: Download SBOMs
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: sboms
           path: dist/sboms
 
-      - name: Authenticate with ghcr.io container registry
-        run: crane auth login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@af1e73f918a031802d376d3c8bbc3fe56130a9b0 # v4.4.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish SBOM (${{ matrix.image.arch }})
         uses: actions/attest@a1948c3f048ba23858d222213b7c278aabede763 # v4.1.1
