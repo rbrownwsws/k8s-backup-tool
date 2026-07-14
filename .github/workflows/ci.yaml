@@ -86,7 +86,7 @@ jobs:
           echo "index-digest=$INDEX_DIGEST" >> "$GITHUB_OUTPUT"
           echo "image-digests=$IMAGE_DIGESTS" >> "$GITHUB_OUTPUT"
 
-  publish-images:
+  push-images:
     needs: build
     if: github.ref == 'refs/heads/master'
 
@@ -111,10 +111,10 @@ jobs:
       - name: Push images
         run: crane push --index dist/oci-images ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:kubectl-1.36 --image-refs digest.txt
 
-  publish-sbom-index:
+  attest-sbom-index:
     needs:
       - build
-      - publish-images
+      - push-images
     if: github.ref == 'refs/heads/master'
 
     permissions:
@@ -147,10 +147,10 @@ jobs:
           sbom-path: dist/sboms/sbom-index.spdx.json
           push-to-registry: true
 
-  publish-sbom-images:
+  attest-sbom-images:
     needs:
       - build
-      - publish-images
+      - push-images
     if: github.ref == 'refs/heads/master'
 
     permissions:
