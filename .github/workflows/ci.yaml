@@ -20,8 +20,7 @@ jobs:
       REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
 
     outputs:
-      index-digest: ${{ steps.digests.outputs.index-digest }}
-      image-digests: ${{ steps.digests.outputs.image-digests }}
+      artifacts: ${{ steps.digests.outputs.artifacts}}
 
     steps:
       - name: Checkout
@@ -82,9 +81,8 @@ jobs:
         working-directory: dist/oci-images
         run: |
           INDEX_DIGEST="sha256:$(sha256sum index.json | cut -d ' ' -f1)"
-          IMAGE_DIGESTS=$(jq -c '[.manifests[] | {arch: .platform.architecture, digest: .digest}]' index.json)
-          echo "index-digest=$INDEX_DIGEST" >> "$GITHUB_OUTPUT"
-          echo "image-digests=$IMAGE_DIGESTS" >> "$GITHUB_OUTPUT"
+          ARTIFACTS=$(jq -c --arg index_digest "$INDEX_DIGEST" '[{arch: "index", digest: $index_digest}] + [.manifests[] | {arch: .platform.architecture, digest: .digest}]' index.json)
+          echo "artifacts=$ARTIFACTS" >> "$GITHUB_OUTPUT"
 
   push-images:
     needs: build
@@ -113,46 +111,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push images
-        run: crane push --index dist/oci-images ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:kubectl-1.36 --image-refs digest.txt
+        run: crane push --index dist/oci-images ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:kubectl-1.36
 
-  attest-sbom-index:
-    needs:
-      - build
-      - push-images
-    if: github.ref == 'refs/heads/master'
-
-    permissions:
-      id-token: write
-      packages: write
-      contents: read
-      attestations: write
-      artifact-metadata: write
-
-    runs-on: ubuntu-24.04
-
-    steps:
-      - name: Download SBOMs
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-        with:
-          name: sboms
-          path: dist/sboms
-
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@af1e73f918a031802d376d3c8bbc3fe56130a9b0 # v4.4.0
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish index SBOM
-        uses: actions/attest@a1948c3f048ba23858d222213b7c278aabede763 # v4.1.1
-        with:
-          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          subject-digest: ${{ needs.build.outputs.index-digest }}
-          sbom-path: dist/sboms/sbom-index.spdx.json
-          push-to-registry: true
-
-  attest-sbom-images:
+  attest-sbom:
     needs:
       - build
       - push-images
@@ -168,7 +129,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: ${{ fromJson(needs.build.outputs.image-digests) }}
+        artifact: ${{ fromJson(needs.build.outputs.artifacts) }}
 
     runs-on: ubuntu-24.04
 
@@ -186,10 +147,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish SBOM (${{ matrix.image.arch }})
+      - name: Attest SBOM (${{ matrix.artifact.arch }})
         uses: actions/attest@a1948c3f048ba23858d222213b7c278aabede763 # v4.1.1
         with:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          subject-digest: ${{ matrix.image.digest }}
-          sbom-path: dist/sboms/sbom-${{ matrix.image.arch }}.spdx.json
+          subject-digest: ${{ matrix.artifact.digest }}
+          sbom-path: dist/sboms/sbom-${{ matrix.artifact.arch }}.spdx.json
           push-to-registry: true
