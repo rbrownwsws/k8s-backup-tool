@@ -13,8 +13,24 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
+      - name: Create GitHub App Token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          permission-contents: write
+
+      - name: Get GitHub App User ID
+        id: get-user-id
+        run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Run `apko lock`
         uses: docker://cgr.dev/chainguard/apko@sha256:994ffaf86e3141b55cfd9cdbd14e7f8f94f9eb2f45266e6adc0a6a409b270aa1 # latest
@@ -23,9 +39,12 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name '${{ steps.app-token.outputs.app-slug }}[bot]'
+          git config --global user.email '${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com'
+          gh auth setup-git
           git add -A
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: update lock file"
           git push
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
