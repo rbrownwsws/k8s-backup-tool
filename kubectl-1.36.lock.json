@@ -61,22 +61,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.2-r2.apk",
-        "version": "1.36.2-r2",
+        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.2-r3.apk",
+        "version": "1.36.2-r3",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13066",
-          "checksum": "sha1-HOS/aRkAFQ2fUsYLynmF23oYIvk="
+          "range": "bytes=0-13150",
+          "checksum": "sha1-v07v8UAqqz1kn8JunSmnX8Kdd0U="
         },
         "data": {
-          "range": "bytes=13067-18938328",
-          "checksum": "sha256-89+8pzOLuPnNLK6GeK59lYvvHmiKcHW4KFMSywVdfj0="
+          "range": "bytes=13151-18938391",
+          "checksum": "sha256-m96LK+Yv9q6Sz8QVieK3ivZSuDX7QfImYnsKDzkmxfg="
         },
-        "checksum": "Q1HOS/aRkAFQ2fUsYLynmF23oYIvk="
+        "checksum": "Q1v07v8UAqqz1kn8JunSmnX8Kdd0U="
       },
       {
         "name": "tzdata",
