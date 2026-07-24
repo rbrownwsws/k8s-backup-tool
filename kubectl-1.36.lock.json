@@ -61,41 +61,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.2-r3.apk",
-        "version": "1.36.2-r3",
+        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.3-r0.apk",
+        "version": "1.36.3-r0",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13150",
-          "checksum": "sha1-v07v8UAqqz1kn8JunSmnX8Kdd0U="
+          "range": "bytes=0-13145",
+          "checksum": "sha1-2fBYY1QYdXxkrqgChkoij0woVm0="
         },
         "data": {
-          "range": "bytes=13151-18938391",
-          "checksum": "sha256-m96LK+Yv9q6Sz8QVieK3ivZSuDX7QfImYnsKDzkmxfg="
+          "range": "bytes=13146-18938340",
+          "checksum": "sha256-rmSoa4NjXj92fJY1yu54sz8upwBzoDjLOGrrf4q/r+Q="
         },
-        "checksum": "Q1v07v8UAqqz1kn8JunSmnX8Kdd0U="
-      },
-      {
-        "name": "tzdata",
-        "url": "https://packages.wolfi.dev/os/x86_64/tzdata-2026c-r0.apk",
-        "version": "2026c-r0",
-        "architecture": "x86_64",
-        "signature": {
-          "range": "",
-          "checksum": ""
-        },
-        "control": {
-          "range": "bytes=0-5322",
-          "checksum": "sha1-D4uuAj8ilkc/B5+yge5Eeu9MAlc="
-        },
-        "data": {
-          "range": "bytes=5323-566945",
-          "checksum": "sha256-f0fSO8z0eGb12Ww/FSlqUouXdYUyQbFw8jhw5OB6EBk="
-        },
-        "checksum": "Q1D4uuAj8ilkc/B5+yge5Eeu9MAlc="
+        "checksum": "Q12fBYY1QYdXxkrqgChkoij0woVm0="
       },
       {
         "name": "ld-linux",
@@ -210,6 +191,25 @@
           "checksum": "sha256-/wonUmo7tH/bFF7kGDpuQhSj/1rj+uG/W+MKOZVLDG0="
         },
         "checksum": "Q1NKb9IoE9lK/LJoXZfLd76sYmXZs="
+      },
+      {
+        "name": "tzdata",
+        "url": "https://packages.wolfi.dev/os/x86_64/tzdata-2026c-r0.apk",
+        "version": "2026c-r0",
+        "architecture": "x86_64",
+        "signature": {
+          "range": "",
+          "checksum": ""
+        },
+        "control": {
+          "range": "bytes=0-5322",
+          "checksum": "sha1-D4uuAj8ilkc/B5+yge5Eeu9MAlc="
+        },
+        "data": {
+          "range": "bytes=5323-566945",
+          "checksum": "sha256-f0fSO8z0eGb12Ww/FSlqUouXdYUyQbFw8jhw5OB6EBk="
+        },
+        "checksum": "Q1D4uuAj8ilkc/B5+yge5Eeu9MAlc="
       },
       {
         "name": "libcrypto3",
