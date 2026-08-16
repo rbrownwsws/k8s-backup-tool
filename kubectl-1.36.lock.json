@@ -61,22 +61,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.3-r2.apk",
-        "version": "1.36.3-r2",
+        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.3-r3.apk",
+        "version": "1.36.3-r3",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13351",
-          "checksum": "sha1-2Bv9OVD3DUhvS9mX4+IXqXQMrIE="
+          "range": "bytes=0-13385",
+          "checksum": "sha1-Dh2uiFHywIFaSJecyWyOkDw/HJo="
         },
         "data": {
-          "range": "bytes=13352-18967843",
-          "checksum": "sha256-en+0bM33SOgrEzfnsPvT4Hng00ZLO6tUV10HU7f3Tl0="
+          "range": "bytes=13386-18968157",
+          "checksum": "sha256-LGHid3duK2h0+QrwJ/293uoYH3p6JdlL4IuMhryO4tg="
         },
-        "checksum": "Q12Bv9OVD3DUhvS9mX4+IXqXQMrIE="
+        "checksum": "Q1Dh2uiFHywIFaSJecyWyOkDw/HJo="
       },
       {
         "name": "ld-linux",
