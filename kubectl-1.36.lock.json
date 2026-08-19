@@ -384,22 +384,22 @@
       },
       {
         "name": "busybox",
-        "url": "https://packages.wolfi.dev/os/x86_64/busybox-1.37.0-r61.apk",
-        "version": "1.37.0-r61",
+        "url": "https://packages.wolfi.dev/os/x86_64/busybox-1.38.0-r0.apk",
+        "version": "1.38.0-r0",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-10913",
-          "checksum": "sha1-Dc1coU0swhMsnFh4BnVin4Y/z6U="
+          "range": "bytes=0-11000",
+          "checksum": "sha1-E923QO4QXc5lJlaZv1+2ejC3Yuk="
         },
         "data": {
-          "range": "bytes=10914-430452",
-          "checksum": "sha256-Lp5skr4+yaxDhdl+G39Z7VC8YLLcwNh+fGvRe0T6bj0="
+          "range": "bytes=11001-435436",
+          "checksum": "sha256-IPnC8en3+rZnuqgq1I7lrYd4tNf82yrpIjqfy9U0uiQ="
         },
-        "checksum": "Q1Dc1coU0swhMsnFh4BnVin4Y/z6U="
+        "checksum": "Q1E923QO4QXc5lJlaZv1+2ejC3Yuk="
       },
       {
         "name": "wolfi-base",
