@@ -61,22 +61,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.3-r3.apk",
-        "version": "1.36.3-r3",
+        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.3-r4.apk",
+        "version": "1.36.3-r4",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13385",
-          "checksum": "sha1-Dh2uiFHywIFaSJecyWyOkDw/HJo="
+          "range": "bytes=0-13397",
+          "checksum": "sha1-+kYAnwQ2YYMCi/PtS6bNW/uv3OQ="
         },
         "data": {
-          "range": "bytes=13386-18968157",
-          "checksum": "sha256-LGHid3duK2h0+QrwJ/293uoYH3p6JdlL4IuMhryO4tg="
+          "range": "bytes=13398-18968380",
+          "checksum": "sha256-HE4w9XtF44O+xlOgcrs4nediiwNPksgmFhKyiBcIsPE="
         },
-        "checksum": "Q1Dh2uiFHywIFaSJecyWyOkDw/HJo="
+        "checksum": "Q1+kYAnwQ2YYMCi/PtS6bNW/uv3OQ="
       },
       {
         "name": "glibc-2.43-locale-posix",
@@ -213,22 +213,22 @@
       },
       {
         "name": "libcrypto3",
-        "url": "https://packages.wolfi.dev/os/x86_64/libcrypto3-3.6.3-r4.apk",
-        "version": "3.6.3-r4",
+        "url": "https://packages.wolfi.dev/os/x86_64/libcrypto3-3.6.3-r5.apk",
+        "version": "3.6.3-r5",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-11066",
-          "checksum": "sha1-q1tmKlM5V4hYJDAT4mFLNXfTWWs="
+          "range": "bytes=0-11120",
+          "checksum": "sha1-Owan7JJqqV7bcXcmimjJC9Nsxpg="
         },
         "data": {
-          "range": "bytes=11067-2440291",
-          "checksum": "sha256-PiuIGCXSaU+bBWb7Rt3pX07C96fH1RTr6tjAH5fG8w4="
+          "range": "bytes=11121-2439662",
+          "checksum": "sha256-2N5XjyaMruE8xdyhMSBnEssjH98387qJARQsW9FYfVQ="
         },
-        "checksum": "Q1q1tmKlM5V4hYJDAT4mFLNXfTWWs="
+        "checksum": "Q1Owan7JJqqV7bcXcmimjJC9Nsxpg="
       },
       {
         "name": "ca-certificates",
@@ -308,22 +308,22 @@
       },
       {
         "name": "libssl3",
-        "url": "https://packages.wolfi.dev/os/x86_64/libssl3-3.6.3-r4.apk",
-        "version": "3.6.3-r4",
+        "url": "https://packages.wolfi.dev/os/x86_64/libssl3-3.6.3-r5.apk",
+        "version": "3.6.3-r5",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-11072",
-          "checksum": "sha1-M9icugKTo/ba2jkEhvIqVsM+I6Q="
+          "range": "bytes=0-11129",
+          "checksum": "sha1-o3m1w5zIUp5iykPPjkz0YWnu1jw="
         },
         "data": {
-          "range": "bytes=11073-524372",
-          "checksum": "sha256-KxEyQDoGJz5m4sfmFhkIPZQIKu4/8uy+1ADalqU/Sd8="
+          "range": "bytes=11130-524661",
+          "checksum": "sha256-XLnVrVKzZsNUOxdfTFzRJl7aTCF4zrCE99jDfmCxR68="
         },
-        "checksum": "Q1M9icugKTo/ba2jkEhvIqVsM+I6Q="
+        "checksum": "Q1o3m1w5zIUp5iykPPjkz0YWnu1jw="
       },
       {
         "name": "apk-tools",
