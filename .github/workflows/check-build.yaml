@@ -1,0 +1,22 @@
+# $schema: https://json.schemastore.org/github-workflow.json
+
+name: Check - Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions: {}
+
+jobs:
+  build:
+    name: Build
+    uses: rbrownwsws/apko-workflows/.github/workflows/build.yaml@3568c0df8f79db3b0f8cfbeac408f26a6f5c3a6c # master
+    permissions:
+      contents: read  # to read the source needed to build the image
+    with:
+      apko-config-file: 'kubectl-1.36.yaml'
+      apko-lock-file: 'kubectl-1.36.lock.json'
