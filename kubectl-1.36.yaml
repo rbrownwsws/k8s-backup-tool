@@ -12,7 +12,7 @@ contents:
 annotations:
   org.opencontainers.image.title: "k8s-backup-tool"
   org.opencontainers.image.description: "A container with kubectl and rclone."
-  org.opencontainers.image.licenses: "MIT"
+  org.opencontainers.image.licenses: "Apache-2.0"
 
 entrypoint:
   command: /bin/sh -l
