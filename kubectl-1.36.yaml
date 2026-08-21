@@ -1,13 +1,15 @@
 contents:
   keyring:
     - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    - https://rbrownwsws.github.io/wolfi-rclone/rbrownwsws.github.io-wolfi-rclone.rsa.pub
   repositories:
     - https://packages.wolfi.dev/os
+    - "@rclone https://rbrownwsws.github.io/wolfi-rclone"
   packages:
     - wolfi-base
     - ca-certificates-bundle
     - kubectl-1.36
-    - rclone
+    - rclone@rclone
 
 annotations:
   org.opencontainers.image.title: "k8s-backup-tool"
