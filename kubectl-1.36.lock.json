@@ -80,22 +80,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.4-r1.apk",
-        "version": "1.36.4-r1",
+        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.4-r2.apk",
+        "version": "1.36.4-r2",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13379",
-          "checksum": "sha1-L1No6tUzdGhm3HdkWtwr0HGM6y8="
+          "range": "bytes=0-13704",
+          "checksum": "sha1-xdCrTw/VClTfmkaiXIDpW8gqm3g="
         },
         "data": {
-          "range": "bytes=13380-18987539",
-          "checksum": "sha256-0OK8mREZJKEy5EElzpBkC/WuAvoDyi2f7njWTEo3QaQ="
+          "range": "bytes=13705-18987887",
+          "checksum": "sha256-9GmRsxpGQBG3tBdPCkIO5jk+tLCuo4PWOnFhNAkbYWA="
         },
-        "checksum": "Q1L1No6tUzdGhm3HdkWtwr0HGM6y8="
+        "checksum": "Q1xdCrTw/VClTfmkaiXIDpW8gqm3g="
       },
       {
         "name": "glibc-2.43-locale-posix",
@@ -175,22 +175,22 @@
       },
       {
         "name": "rclone",
-        "url": "https://rbrownwsws.github.io/wolfi-rclone/x86_64/rclone-1.75.0-r4.apk",
-        "version": "1.75.0-r4",
+        "url": "https://rbrownwsws.github.io/wolfi-rclone/x86_64/rclone-1.75.0-r5.apk",
+        "version": "1.75.0-r5",
         "architecture": "x86_64",
         "signature": {
-          "range": "bytes=0-670",
-          "checksum": "sha1-8y3FIXcxfXqxubpfDknsagf+kAk="
+          "range": "bytes=0-669",
+          "checksum": "sha1-h0o4TGfpGUsoNBhU0EcsGfk7/rc="
         },
         "control": {
-          "range": "bytes=671-5748",
-          "checksum": "sha1-iAe//FuUTwRrTPPUrmFUtH0mIRw="
+          "range": "bytes=670-5744",
+          "checksum": "sha1-p33ufTQpVUj5sKTFFyDQ4WGBCrk="
         },
         "data": {
-          "range": "bytes=5749-45748517",
-          "checksum": "sha256-cOSZ2FMscCdm1LK1MKDLgdx0VEwijCN4cYdztYhkbfQ="
+          "range": "bytes=5745-45748514",
+          "checksum": "sha256-+eZeisAXG+E4a/yE4eLjlCSDr578BIulc2U3ryh/bg8="
         },
-        "checksum": "Q1iAe//FuUTwRrTPPUrmFUtH0mIRw="
+        "checksum": "Q1p33ufTQpVUj5sKTFFyDQ4WGBCrk="
       },
       {
         "name": "wolfi-keys",
@@ -403,22 +403,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/aarch64/kubectl-1.36-1.36.4-r1.apk",
-        "version": "1.36.4-r1",
+        "url": "https://packages.wolfi.dev/os/aarch64/kubectl-1.36-1.36.4-r2.apk",
+        "version": "1.36.4-r2",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13410",
-          "checksum": "sha1-bV2qKlx1tj1ORhdIba5EW0JAnhY="
+          "range": "bytes=0-13731",
+          "checksum": "sha1-oi/SUTam1YVIhLMhAqdbZVyhfyc="
         },
         "data": {
-          "range": "bytes=13411-16837312",
-          "checksum": "sha256-RC0O9tWrrvXfoxJOn/bf3ApTbWKfrQIkznvqRyWf3PA="
+          "range": "bytes=13732-16837640",
+          "checksum": "sha256-qFXXRNf4446Z4gqWy+1e/quEluCprAHK3FhAW1tYX7k="
         },
-        "checksum": "Q1bV2qKlx1tj1ORhdIba5EW0JAnhY="
+        "checksum": "Q1oi/SUTam1YVIhLMhAqdbZVyhfyc="
       },
       {
         "name": "glibc-2.43-locale-posix",
@@ -498,22 +498,22 @@
       },
       {
         "name": "rclone",
-        "url": "https://rbrownwsws.github.io/wolfi-rclone/aarch64/rclone-1.75.0-r4.apk",
-        "version": "1.75.0-r4",
+        "url": "https://rbrownwsws.github.io/wolfi-rclone/aarch64/rclone-1.75.0-r5.apk",
+        "version": "1.75.0-r5",
         "architecture": "aarch64",
         "signature": {
-          "range": "bytes=0-670",
-          "checksum": "sha1-MgDAOqPLX23yWLhStR29+9VLzyQ="
+          "range": "bytes=0-671",
+          "checksum": "sha1-KiC1SYrWVEIOX1rXmeSo3/PnQ8Y="
         },
         "control": {
-          "range": "bytes=671-5741",
-          "checksum": "sha1-H1va5AojuWWmDtIlrQPBIuNYBdE="
+          "range": "bytes=672-5740",
+          "checksum": "sha1-HWZ+dF7iwk28Q41yuJMI4p+PU48="
         },
         "data": {
-          "range": "bytes=5742-42394394",
-          "checksum": "sha256-DzBidw5qChJDg5KpT17rHEC829F3gGHCiHtJuOt5XAQ="
+          "range": "bytes=5741-42394402",
+          "checksum": "sha256-yOO/6GyX0zUs2JqNIef648STdeTfJ7FQUDQeEO8vYSg="
         },
-        "checksum": "Q1H1va5AojuWWmDtIlrQPBIuNYBdE="
+        "checksum": "Q1HWZ+dF7iwk28Q41yuJMI4p+PU48="
       },
       {
         "name": "wolfi-keys",
