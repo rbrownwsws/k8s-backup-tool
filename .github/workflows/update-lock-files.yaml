@@ -12,7 +12,7 @@ permissions: {}
 jobs:
   update:
     name: Update lock files
-    uses: rbrownwsws/apko-workflows/.github/workflows/update-lock-file.yaml@d85532ca2145ce22b31b9be5b64d97b6913edc81 # master
+    uses: rbrownwsws/apko-workflows/.github/workflows/update-lock-file.yaml@8e7d9688c53ce82ad02864e24ea8fa1dd840cf86 # v1.0.0
     permissions:
       contents: write  # to read/write the lock file
     with:
