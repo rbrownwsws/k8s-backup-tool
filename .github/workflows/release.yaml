@@ -16,7 +16,7 @@ permissions: {}
 jobs:
   build:
     name: Release
-    uses: rbrownwsws/apko-workflows/.github/workflows/release.yaml@8e7d9688c53ce82ad02864e24ea8fa1dd840cf86 # v1.0.0
+    uses: rbrownwsws/apko-workflows/.github/workflows/release.yaml@f7dace7ba452bc1bc8fbf11bb60440589ae1d8b5 # v1.0.1
     permissions:
       contents: read            # to read the source needed to build the image
       id-token: write           # to get ID needed to sign attestations
