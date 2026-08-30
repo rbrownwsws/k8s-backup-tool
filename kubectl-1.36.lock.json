@@ -82,22 +82,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.4-r3.apk",
-        "version": "1.36.4-r3",
+        "url": "https://packages.wolfi.dev/os/x86_64/kubectl-1.36-1.36.4-r4.apk",
+        "version": "1.36.4-r4",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13702",
-          "checksum": "sha1-4lUd1ANsJIPcw46V2QC4nB4d2zU="
+          "range": "bytes=0-13745",
+          "checksum": "sha1-duubTm2d8RTCfac/MUMZewnS3Tk="
         },
         "data": {
-          "range": "bytes=13703-18987875",
-          "checksum": "sha256-ZNGMufhDDB/wVT1Y9Z7fOCvu9p1IaPpQGg1K6aTSmws="
+          "range": "bytes=13746-18941211",
+          "checksum": "sha256-HiRR/zApDhHesM5e/njIJEXytQ0LOy5zvFwCKM2q0qc="
         },
-        "checksum": "Q14lUd1ANsJIPcw46V2QC4nB4d2zU="
+        "checksum": "Q1duubTm2d8RTCfac/MUMZewnS3Tk="
       },
       {
         "name": "glibc-2.44-locale-posix",
@@ -405,22 +405,22 @@
       },
       {
         "name": "kubectl-1.36",
-        "url": "https://packages.wolfi.dev/os/aarch64/kubectl-1.36-1.36.4-r3.apk",
-        "version": "1.36.4-r3",
+        "url": "https://packages.wolfi.dev/os/aarch64/kubectl-1.36-1.36.4-r4.apk",
+        "version": "1.36.4-r4",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-13730",
-          "checksum": "sha1-6SgcfAHR+0Uz5YGbXoA4UpnHnZ4="
+          "range": "bytes=0-13753",
+          "checksum": "sha1-+FoYXJbNblEG+lPUkja7dIy03ic="
         },
         "data": {
-          "range": "bytes=13731-16837627",
-          "checksum": "sha256-7elIpyiE9TGJKTBasSzjWhNnjIM7lABeia+mGm3YnxM="
+          "range": "bytes=13754-16852128",
+          "checksum": "sha256-L2dpPIwwKxy26e9TbQtpPfGEt27R6C5RjG2IV1Ht2jY="
         },
-        "checksum": "Q16SgcfAHR+0Uz5YGbXoA4UpnHnZ4="
+        "checksum": "Q1+FoYXJbNblEG+lPUkja7dIy03ic="
       },
       {
         "name": "glibc-2.44-locale-posix",
