@@ -177,22 +177,22 @@
       },
       {
         "name": "rclone",
-        "url": "https://rbrownwsws.github.io/wolfi-rclone/x86_64/rclone-1.75.0-r9.apk",
-        "version": "1.75.0-r9",
+        "url": "https://rbrownwsws.github.io/wolfi-rclone/x86_64/rclone-1.75.0-r10.apk",
+        "version": "1.75.0-r10",
         "architecture": "x86_64",
         "signature": {
-          "range": "bytes=0-721",
-          "checksum": "sha1-//K2K3APbo76+Yyn3X1gs8KImI4="
+          "range": "bytes=0-717",
+          "checksum": "sha1-9HiBMybRRAYQzjBnKAcBGkgDVHs="
         },
         "control": {
-          "range": "bytes=722-5798",
-          "checksum": "sha1-Us3nY4LAv5zY8O3wyTD5/9Q+rUo="
+          "range": "bytes=718-5796",
+          "checksum": "sha1-YlwWiIf0ls/0JLqIHhmEn3yZzns="
         },
         "data": {
-          "range": "bytes=5799-44831789",
-          "checksum": "sha256-Ak2ITyN/AOP1jHgTGwSjXeIArrVM3FckPO0ZrBC2M10="
+          "range": "bytes=5797-44861264",
+          "checksum": "sha256-IMvdcXkFNHyLjslYHPkMt4pdAhuMGQgJUe75kvMFIVU="
         },
-        "checksum": "Q1Us3nY4LAv5zY8O3wyTD5/9Q+rUo="
+        "checksum": "Q1YlwWiIf0ls/0JLqIHhmEn3yZzns="
       },
       {
         "name": "wolfi-keys",
@@ -500,22 +500,22 @@
       },
       {
         "name": "rclone",
-        "url": "https://rbrownwsws.github.io/wolfi-rclone/aarch64/rclone-1.75.0-r9.apk",
-        "version": "1.75.0-r9",
+        "url": "https://rbrownwsws.github.io/wolfi-rclone/aarch64/rclone-1.75.0-r10.apk",
+        "version": "1.75.0-r10",
         "architecture": "aarch64",
         "signature": {
-          "range": "bytes=0-722",
-          "checksum": "sha1-w7IR3wIeMeVJZlW3WgVk6ZHKKgM="
+          "range": "bytes=0-711",
+          "checksum": "sha1-bIkAZcTKRMZDdCTCvJeiEuhJjww="
         },
         "control": {
-          "range": "bytes=723-5792",
-          "checksum": "sha1-HD6En0L8iPLIyj56DyyrM2sEWrY="
+          "range": "bytes=712-5780",
+          "checksum": "sha1-n4CAbd/7hmc4PvZX5Mezn3kMXJA="
         },
         "data": {
-          "range": "bytes=5793-41391746",
-          "checksum": "sha256-ESv8HnLazyrcBbq9ZBz5DY5OervBU4VZDQAQ4+MXUP8="
+          "range": "bytes=5781-41392086",
+          "checksum": "sha256-clmNPtWL0I1QrlV/z5FqrSQ/aNfqx+LSdVjv3d3aQV4="
         },
-        "checksum": "Q1HD6En0L8iPLIyj56DyyrM2sEWrY="
+        "checksum": "Q1n4CAbd/7hmc4PvZX5Mezn3kMXJA="
       },
       {
         "name": "wolfi-keys",
