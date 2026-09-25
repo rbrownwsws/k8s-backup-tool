@@ -63,22 +63,22 @@
       },
       {
         "name": "ca-certificates-bundle",
-        "url": "https://packages.wolfi.dev/os/x86_64/ca-certificates-bundle-20260909-r0.apk",
-        "version": "20260909-r0",
+        "url": "https://packages.wolfi.dev/os/x86_64/ca-certificates-bundle-20260909-r1.apk",
+        "version": "20260909-r1",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-8399",
-          "checksum": "sha1-TJEuSb/8adc+W3ue0OW/G7MMvrY="
+          "range": "bytes=0-8444",
+          "checksum": "sha1-wITWZ+kxqTqLhGONBuiW43Vifvk="
         },
         "data": {
-          "range": "bytes=8400-117588",
-          "checksum": "sha256-XKX+u0xV/THnZwnB7OhUIIm70O7rUnHCPjG533Uw+Pk="
+          "range": "bytes=8445-117633",
+          "checksum": "sha256-Ly4hDPfHVITHrEkMv5OLr97cv4sI5lYwpMMxUwQlsAw="
         },
-        "checksum": "Q1TJEuSb/8adc+W3ue0OW/G7MMvrY="
+        "checksum": "Q1wITWZ+kxqTqLhGONBuiW43Vifvk="
       },
       {
         "name": "kubectl-1.36",
@@ -386,22 +386,22 @@
       },
       {
         "name": "apk-tools",
-        "url": "https://packages.wolfi.dev/os/x86_64/apk-tools-2.14.10-r14.apk",
-        "version": "2.14.10-r14",
+        "url": "https://packages.wolfi.dev/os/x86_64/apk-tools-2.14.10-r15.apk",
+        "version": "2.14.10-r15",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-9383",
-          "checksum": "sha1-jj35+d2so02k+Tv4sgPKk9WhkXA="
+          "range": "bytes=0-9513",
+          "checksum": "sha1-OcEDzvcQxJpPxLez5SghSexXa2M="
         },
         "data": {
-          "range": "bytes=9384-188030",
-          "checksum": "sha256-4oX/lxCvTOoBYpUFtvQkU5Xip+vt7Pu84jQLjCy6mZw="
+          "range": "bytes=9514-188161",
+          "checksum": "sha256-0biqFccscGIp9Uo5z26kR/Yzu2+H5gAh/7/fOpjmX9I="
         },
-        "checksum": "Q1jj35+d2so02k+Tv4sgPKk9WhkXA="
+        "checksum": "Q1OcEDzvcQxJpPxLez5SghSexXa2M="
       },
       {
         "name": "libxcrypt",
@@ -500,22 +500,22 @@
       },
       {
         "name": "ca-certificates-bundle",
-        "url": "https://packages.wolfi.dev/os/aarch64/ca-certificates-bundle-20260909-r0.apk",
-        "version": "20260909-r0",
+        "url": "https://packages.wolfi.dev/os/aarch64/ca-certificates-bundle-20260909-r1.apk",
+        "version": "20260909-r1",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-8435",
-          "checksum": "sha1-LTUpbqlJ7vXFcmUzDHO7xASm9vQ="
+          "range": "bytes=0-8482",
+          "checksum": "sha1-VRejqJ4mpISZYu/Z6OxC6eXQfFA="
         },
         "data": {
-          "range": "bytes=8436-117625",
-          "checksum": "sha256-Wlf83U8N4caVVAOP++hyiI5+c909VHEPkgitFSoEIkk="
+          "range": "bytes=8483-117667",
+          "checksum": "sha256-g6IKKYcMe8RDDTl8RwoB1XipwST/wK3KEB2HgQYOHx4="
         },
-        "checksum": "Q1LTUpbqlJ7vXFcmUzDHO7xASm9vQ="
+        "checksum": "Q1VRejqJ4mpISZYu/Z6OxC6eXQfFA="
       },
       {
         "name": "kubectl-1.36",
@@ -823,22 +823,22 @@
       },
       {
         "name": "apk-tools",
-        "url": "https://packages.wolfi.dev/os/aarch64/apk-tools-2.14.10-r14.apk",
-        "version": "2.14.10-r14",
+        "url": "https://packages.wolfi.dev/os/aarch64/apk-tools-2.14.10-r15.apk",
+        "version": "2.14.10-r15",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-9419",
-          "checksum": "sha1-aDFm+YCO1O5L2UJo+o0hXlC2CIc="
+          "range": "bytes=0-9547",
+          "checksum": "sha1-Bggm9/PKnlAtok3S5ftYrz4J2H8="
         },
         "data": {
-          "range": "bytes=9420-180384",
-          "checksum": "sha256-o6Kg1kJQD4APE5TcjmZFg2GBg4ZTd0bviAActURYiOE="
+          "range": "bytes=9548-180520",
+          "checksum": "sha256-XgB269zNsFitHMGSx4ndsBfykLobyR2/sT38BQL+zQo="
         },
-        "checksum": "Q1aDFm+YCO1O5L2UJo+o0hXlC2CIc="
+        "checksum": "Q1Bggm9/PKnlAtok3S5ftYrz4J2H8="
       },
       {
         "name": "libxcrypt",
