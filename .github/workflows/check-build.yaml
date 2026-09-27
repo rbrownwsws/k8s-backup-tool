@@ -14,7 +14,7 @@ permissions: {}
 jobs:
   build:
     name: Build
-    uses: rbrownwsws/apko-workflows/.github/workflows/build.yaml@f397324c261ff96a561912086870c272621ed33d # v1.0.4
+    uses: rbrownwsws/apko-workflows/.github/workflows/build.yaml@3a7160d23a05da70d9171cc5d1872065780e0ece # v1.0.5
     permissions:
       contents: read  # to read the source needed to build the image
     with:
