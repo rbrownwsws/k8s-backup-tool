@@ -291,60 +291,60 @@
       },
       {
         "name": "openssl-4.0-libcrypto",
-        "url": "https://packages.wolfi.dev/os/x86_64/openssl-4.0-libcrypto-4.0.3-r2.apk",
-        "version": "4.0.3-r2",
+        "url": "https://packages.wolfi.dev/os/x86_64/openssl-4.0-libcrypto-4.0.3-r3.apk",
+        "version": "4.0.3-r3",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-14067",
-          "checksum": "sha1-jcL2KVxEKYaOu1vyodgvTFxTqU8="
+          "range": "bytes=0-14049",
+          "checksum": "sha1-b4G1sNKXcxy3Vh2mP3kJ/jZjdYE="
         },
         "data": {
-          "range": "bytes=14068-2396769",
-          "checksum": "sha256-F9XxWEroZxEz9cm15Y5GexxHfUah3TCORqrq48dsOfk="
+          "range": "bytes=14050-2396744",
+          "checksum": "sha256-FJPyAyOYV2qNpQtBpT8VP72m0N8lQZLwCE+lE6KO9ys="
         },
-        "checksum": "Q1jcL2KVxEKYaOu1vyodgvTFxTqU8="
+        "checksum": "Q1b4G1sNKXcxy3Vh2mP3kJ/jZjdYE="
       },
       {
         "name": "openssl-4.0-libssl",
-        "url": "https://packages.wolfi.dev/os/x86_64/openssl-4.0-libssl-4.0.3-r2.apk",
-        "version": "4.0.3-r2",
+        "url": "https://packages.wolfi.dev/os/x86_64/openssl-4.0-libssl-4.0.3-r3.apk",
+        "version": "4.0.3-r3",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-14045",
-          "checksum": "sha1-Sh40oIUgnyg5LXsHO6yA4fsYmEA="
+          "range": "bytes=0-14020",
+          "checksum": "sha1-p4V03cwi4QFSuGvtiF1KIQC07NY="
         },
         "data": {
-          "range": "bytes=14046-570116",
-          "checksum": "sha256-fSDch0dx6E5D1makysl/z8aLUl5cCXVXChzkebjmfx4="
+          "range": "bytes=14021-570087",
+          "checksum": "sha256-31KiDuzP84tHZNz+bR8V+dFdsQCNfpIr/jH3Rh/BiqE="
         },
-        "checksum": "Q1Sh40oIUgnyg5LXsHO6yA4fsYmEA="
+        "checksum": "Q1p4V03cwi4QFSuGvtiF1KIQC07NY="
       },
       {
         "name": "zlib",
-        "url": "https://packages.wolfi.dev/os/x86_64/zlib-1.3.2.1_rc20260601-r0.apk",
-        "version": "1.3.2.1_rc20260601-r0",
+        "url": "https://packages.wolfi.dev/os/x86_64/zlib-1.3.2.1_rc20260917-r0.apk",
+        "version": "1.3.2.1_rc20260917-r0",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-9907",
-          "checksum": "sha1-CUQtfgunel6EkmYihApm5q+qkmI="
+          "range": "bytes=0-10076",
+          "checksum": "sha1-g9d7hzIr/FDvBI7cawWPmD2a7BA="
         },
         "data": {
-          "range": "bytes=9908-74192",
-          "checksum": "sha256-Mg2PrXolypRpQX7mWeCNQlZzgSCGxB/1ATAwZWoHr9A="
+          "range": "bytes=10077-74445",
+          "checksum": "sha256-oBmc9NLurcRmrBO8hnOejvPjAE3recnqiC+XZtTa6/s="
         },
-        "checksum": "Q1CUQtfgunel6EkmYihApm5q+qkmI="
+        "checksum": "Q1g9d7hzIr/FDvBI7cawWPmD2a7BA="
       },
       {
         "name": "apk-tools",
@@ -690,60 +690,60 @@
       },
       {
         "name": "openssl-4.0-libcrypto",
-        "url": "https://packages.wolfi.dev/os/aarch64/openssl-4.0-libcrypto-4.0.3-r2.apk",
-        "version": "4.0.3-r2",
+        "url": "https://packages.wolfi.dev/os/aarch64/openssl-4.0-libcrypto-4.0.3-r3.apk",
+        "version": "4.0.3-r3",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-14100",
-          "checksum": "sha1-jhFuS+JVDiuTYMq7VEauz0GMTfk="
+          "range": "bytes=0-14079",
+          "checksum": "sha1-mZ3eZCYZN+iPg5jS2cyoMZnnboI="
         },
         "data": {
-          "range": "bytes=14101-2150178",
-          "checksum": "sha256-Bs2dKGW3bXXdHan5D47onn5cUSYTcZT7INHUat2fIAo="
+          "range": "bytes=14080-2150145",
+          "checksum": "sha256-WJztwuMomopcTkOUaNaYs62nBIfQvJ7dX+lqpYj3Kts="
         },
-        "checksum": "Q1jhFuS+JVDiuTYMq7VEauz0GMTfk="
+        "checksum": "Q1mZ3eZCYZN+iPg5jS2cyoMZnnboI="
       },
       {
         "name": "openssl-4.0-libssl",
-        "url": "https://packages.wolfi.dev/os/aarch64/openssl-4.0-libssl-4.0.3-r2.apk",
-        "version": "4.0.3-r2",
+        "url": "https://packages.wolfi.dev/os/aarch64/openssl-4.0-libssl-4.0.3-r3.apk",
+        "version": "4.0.3-r3",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-14080",
-          "checksum": "sha1-RPOJqFbJZSGNAxaaviQzN2NXvag="
+          "range": "bytes=0-14062",
+          "checksum": "sha1-Lpr/CZSQx7wrHb5jw9y+V8P4zA4="
         },
         "data": {
-          "range": "bytes=14081-529517",
-          "checksum": "sha256-7dlMZM6OYMR5so7WAgfOMDjI0/jNrv/FEJ+oNK1sf6U="
+          "range": "bytes=14063-529489",
+          "checksum": "sha256-eTUrKLgXP+KWu7+QOAEUXCxVeY29b2Aa1uc5h9LkLnE="
         },
-        "checksum": "Q1RPOJqFbJZSGNAxaaviQzN2NXvag="
+        "checksum": "Q1Lpr/CZSQx7wrHb5jw9y+V8P4zA4="
       },
       {
         "name": "zlib",
-        "url": "https://packages.wolfi.dev/os/aarch64/zlib-1.3.2.1_rc20260601-r0.apk",
-        "version": "1.3.2.1_rc20260601-r0",
+        "url": "https://packages.wolfi.dev/os/aarch64/zlib-1.3.2.1_rc20260917-r0.apk",
+        "version": "1.3.2.1_rc20260917-r0",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-9942",
-          "checksum": "sha1-qEEcRLz25dJ+vO1267oeD0lDd0Y="
+          "range": "bytes=0-10118",
+          "checksum": "sha1-yIbOKKJrEHmfQUEvp8haQHhn8Rc="
         },
         "data": {
-          "range": "bytes=9943-61799",
-          "checksum": "sha256-kvaMi8Kew2+I2UIl9AjthrVli/dtlDgxVOTeunrY4hE="
+          "range": "bytes=10119-61960",
+          "checksum": "sha256-utrzu7QJNTNJ6ShDdAyNsh7mRa5AKtmVBXlfmmVhuSI="
         },
-        "checksum": "Q1qEEcRLz25dJ+vO1267oeD0lDd0Y="
+        "checksum": "Q1yIbOKKJrEHmfQUEvp8haQHhn8Rc="
       },
       {
         "name": "apk-tools",
