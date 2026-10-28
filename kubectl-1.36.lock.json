@@ -177,22 +177,22 @@
       },
       {
         "name": "rclone",
-        "url": "https://rbrownwsws.github.io/wolfi-rclone/x86_64/rclone-1.75.0-r15.apk",
-        "version": "1.75.0-r15",
+        "url": "https://rbrownwsws.github.io/wolfi-rclone/x86_64/rclone-1.75.0-r16.apk",
+        "version": "1.75.0-r16",
         "architecture": "x86_64",
         "signature": {
-          "range": "bytes=0-717",
-          "checksum": "sha1-a8/mq+bTRdn301cEPsz/JPYxyyE="
+          "range": "bytes=0-715",
+          "checksum": "sha1-Exd7Nq1ArfFgjIR3CEI/wp8HOh8="
         },
         "control": {
-          "range": "bytes=718-5865",
-          "checksum": "sha1-3oRQ3Aibl+X+hbgGIG4XnIodIq4="
+          "range": "bytes=716-5860",
+          "checksum": "sha1-Iavx1QWGdolhDfO1DhFCXYg6FVk="
         },
         "data": {
-          "range": "bytes=5866-44778769",
-          "checksum": "sha256-YHDnxH/V8kIYAWdJAX6EYD2KB2Xk7Y7RhxiaipuYHTA="
+          "range": "bytes=5861-44778369",
+          "checksum": "sha256-+5ZgQtrwxYCs81oOHfEBecSBRbYTP2QuIhxPjOMr0YM="
         },
-        "checksum": "Q13oRQ3Aibl+X+hbgGIG4XnIodIq4="
+        "checksum": "Q1Iavx1QWGdolhDfO1DhFCXYg6FVk="
       },
       {
         "name": "wolfi-keys",
@@ -348,22 +348,22 @@
       },
       {
         "name": "apk-tools",
-        "url": "https://packages.wolfi.dev/os/x86_64/apk-tools-2.14.10-r17.apk",
-        "version": "2.14.10-r17",
+        "url": "https://packages.wolfi.dev/os/x86_64/apk-tools-2.14.12-r0.apk",
+        "version": "2.14.12-r0",
         "architecture": "x86_64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-10257",
-          "checksum": "sha1-E8t4KtTp/Uwpr20qpzYhUreUy+o="
+          "range": "bytes=0-15879",
+          "checksum": "sha1-w4dvbYANZCyPgUWkh+tvBlgUShs="
         },
         "data": {
-          "range": "bytes=10258-188859",
-          "checksum": "sha256-br4RYIK5f72k1VWLfGlQv3SxFvB5K6V6b6MHEmhO1jA="
+          "range": "bytes=15880-194270",
+          "checksum": "sha256-OjBy0bn7mq3fZfF2pUWm6ibSB5u10uBXUO90wSusWEM="
         },
-        "checksum": "Q1E8t4KtTp/Uwpr20qpzYhUreUy+o="
+        "checksum": "Q1w4dvbYANZCyPgUWkh+tvBlgUShs="
       },
       {
         "name": "libxcrypt",
@@ -576,22 +576,22 @@
       },
       {
         "name": "rclone",
-        "url": "https://rbrownwsws.github.io/wolfi-rclone/aarch64/rclone-1.75.0-r15.apk",
-        "version": "1.75.0-r15",
+        "url": "https://rbrownwsws.github.io/wolfi-rclone/aarch64/rclone-1.75.0-r16.apk",
+        "version": "1.75.0-r16",
         "architecture": "aarch64",
         "signature": {
-          "range": "bytes=0-721",
-          "checksum": "sha1-n+WjR61J8z8ttdVIkQaNFLzW3A4="
+          "range": "bytes=0-709",
+          "checksum": "sha1-saXHbEu2AeLAs8o19vWJOKd9Y6o="
         },
         "control": {
-          "range": "bytes=722-5860",
-          "checksum": "sha1-b4bwE8H9I3uzgNFAxyRLNdstx18="
+          "range": "bytes=710-5850",
+          "checksum": "sha1-m2Xr2Zjbgh2iwmaXvYwjb8toFlA="
         },
         "data": {
-          "range": "bytes=5861-41451805",
-          "checksum": "sha256-fm7I8cDezYnyw52OxluIsvxiKHEO5iPAhfY3X+Oz4JE="
+          "range": "bytes=5851-41453354",
+          "checksum": "sha256-hle9TjfVQJui7Hm7y9xAiHHhkiUEQR53G9dxCAxwhNQ="
         },
-        "checksum": "Q1b4bwE8H9I3uzgNFAxyRLNdstx18="
+        "checksum": "Q1m2Xr2Zjbgh2iwmaXvYwjb8toFlA="
       },
       {
         "name": "wolfi-keys",
@@ -747,22 +747,22 @@
       },
       {
         "name": "apk-tools",
-        "url": "https://packages.wolfi.dev/os/aarch64/apk-tools-2.14.10-r17.apk",
-        "version": "2.14.10-r17",
+        "url": "https://packages.wolfi.dev/os/aarch64/apk-tools-2.14.12-r0.apk",
+        "version": "2.14.12-r0",
         "architecture": "aarch64",
         "signature": {
           "range": "",
           "checksum": ""
         },
         "control": {
-          "range": "bytes=0-10289",
-          "checksum": "sha1-vIqs9LYJJ8bU8v4G9BTJpQNtxKQ="
+          "range": "bytes=0-15905",
+          "checksum": "sha1-IMqIw3lsc/XA3NQJI+onuv8nkuo="
         },
         "data": {
-          "range": "bytes=10290-181173",
-          "checksum": "sha256-7hYn+Tao7icARHY+LHtOYRVPfH0+aD/bEAW/1U3ujkI="
+          "range": "bytes=15906-186782",
+          "checksum": "sha256-IAU+TUGx0jnJ1pLtE3OCdvp6H6++NvcCljbWMIDn/fs="
         },
-        "checksum": "Q1vIqs9LYJJ8bU8v4G9BTJpQNtxKQ="
+        "checksum": "Q1IMqIw3lsc/XA3NQJI+onuv8nkuo="
       },
       {
         "name": "libxcrypt",
